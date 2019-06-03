@@ -41,10 +41,12 @@ class Electron extends Circle {
     }
 
     /**
-     *
+     * Zmienia obecną lokalizację krążka (elektronu).
      */
     private void changeLoc(){
+        /** Przypisanie wartości prędkości składowej X*/
         double cX=veloX;
+        /** Przypisanie wartości prędkości składowej Y */
         double cY=veloY;
         plocX=locX;
         plocY=locY;
@@ -55,7 +57,7 @@ class Electron extends Circle {
     }
 
     /**
-     *
+     * Zmienia wartość prędkości krążka, przy pomocy przyspieszenia.
      */
     void change(){
         veloX += accX;
@@ -100,6 +102,9 @@ class Electron extends Circle {
         else sign = true;
     }
 
+    /**
+     * Generuje odbicie od zewnętrznej strony tylnej ścianki bramki.
+     */
     void pounce(){
         veloX = veloX * (-1);
     }

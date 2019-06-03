@@ -64,11 +64,11 @@ public class Controller implements Initializable {
     /** Aktualny tryb, w którym jest plansza 0 - stop, 1 - work, 2 - win/lost */
     private int mode = 0;
 
-    /** */
+    /** Stworzenie listy przeszkód dla poziomu łatwego*/
     private ArrayList<Rectangle> er = new ArrayList<>();
-    /** */
+    /** Stworzenie listy przeszkód dla poziomu średniego*/
     private ArrayList<Rectangle> mr = new ArrayList<>();
-    /** */
+    /** Stworzenie listy przeszkód dla poziomu trudnego*/
     private ArrayList<Rectangle> hr = new ArrayList<>();
 
     @FXML private Rectangle barrier1;
@@ -89,8 +89,6 @@ public class Controller implements Initializable {
     /**
      * Inicjalizuje obiekty potrzebne do obsługi oraz wyświetlenia
      * poszczególnych elementów interfejsu graficznego.
-     * @param url
-     * @param resource
      */
     @Override
     public void initialize(URL url, ResourceBundle resource){

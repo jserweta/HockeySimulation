@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<GridPane fx:id="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="background" maxHeight="900.0" maxWidth="1200.0" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
    </columnConstraints>
@@ -20,12 +20,11 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
-      <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <ButtonBar GridPane.rowIndex="2">
+      <ButtonBar maxHeight="100.0" minHeight="100.0" prefHeight="100.0" style="-fx-background-color: grey;" GridPane.rowIndex="1">
          <buttons>
+            <ToggleButton fx:id="ball_sign_toggle" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefWidth="20.0" selected="true" text="Sign" />
             <Button fx:id="start" mnemonicParsing="false" text="Start" />
             <Button fx:id="pause" mnemonicParsing="false" text="Pause" />
             <Button fx:id="reset" mnemonicParsing="false" text="Reset" />
@@ -51,6 +50,5 @@
             <Rectangle fx:id="barrier34" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="177.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" />
             <Rectangle fx:id="barrier36" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="5.0" layoutX="708.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" />
          </children></Pane>
-      <ToggleButton fx:id="ball_sign_toggle" mnemonicParsing="false" selected="true" text="Sign" GridPane.rowIndex="4" />
    </children>
 </GridPane>
